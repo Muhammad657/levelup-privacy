@@ -69,7 +69,19 @@
       </ul>
 
       <h2>4. No third-party login — and third-party services</h2>
-      <p>We do not use third-party login providers (Google, Apple, Facebook, etc.). Login is via email and password only. However, we may use third-party services for hosting, analytics, or messaging delivery (e.g., secure database provider, hosting, or email service). When we do, those providers are selected for strong security and limited data use. If you click an external donations link, that action opens our public donation webpage which may be handled by a third-party payment processor — that external processor will have its own privacy policy.</p>
+      <p>We do not use third-party login providers (Google, Apple, Facebook, etc.). Login is available only via email and password.
+
+The Digital Reborn app uses Firebase (Google LLC) as its backend infrastructure:
+
+Firebase Authentication is used for account sign-up and sign-in. Passwords are stored only in hashed form and never in plain text.
+
+Firebase Database (Firestore/Realtime Database) is used to store user-generated data, including donation survey submissions, past donation records, and chat messages.
+
+Firebase Storage is used to store any images uploaded by users (such as photos of donated devices).
+
+All data stored in Firebase is protected by Google’s security standards, including encryption in transit and at rest.
+
+No other third-party analytics or integrations are used. If you click an external link to make a monetary donation, you will be redirected to our official donations page, which may be handled by a third-party payment processor under its own privacy policy.</p>
 
       <h2>5. Data storage, security, and retention</h2>
       <p class="muted">How we protect your information</p>
